@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="banjacl"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-12 03:37:52 PM"/>
+        <attribute name="created" value="YmFuamFjbDsyMDIwMUNORDgyNTk0SEw7MjAyMS0wMi0xMjswMTo0ODozNyBQTTsyODY2"/>
+        <attribute name="edited" value="YmFuamFjbDsyMDIwMUNORDgyNTk0SEw7MjAyMS0wMi0xMjswMzozNzo1MiBQTTszOzI5NzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ownerId, dogName, dogBreed" type="String" array="False" size=""/>
+            <declare name="dogAge, careDuration, dogWeight, totalCost" type="Integer" array="False" size=""/>
+            <output expression="Thank's For Choosing MPLS Dog Boarding!! Please enter your ID number:" newline="True"/>
+            <input variable="ownerId"/>
+            <assign variable="ownerId" expression="ReadLine"/>
+            <output expression="Welcome Back Customer #{ownerId}!! What is your dogs name?" newline="True"/>
+            <input variable="dogName"/>
+            <assign variable="dogName" expression="ReadLine"/>
+            <output expression="And what breed is {dogName}?" newline="True"/>
+            <input variable="dogBreed"/>
+            <assign variable="dogBreed" expression="ReadLine"/>
+            <output expression="And how many years old is {dogName}?" newline="True"/>
+            <input variable="dogAge"/>
+            <assign variable="dogAge" expression="Convert.ToInt32(Console.ReadLine())"/>
+            <output expression="And how many weeks will {dogName} need to be in our care?" newline="True"/>
+            <input variable="careDuration"/>
+            <assign variable="careDuration" expression="Convert.ToInt32(Console.ReadLine())"/>
+            <output expression="How many lbs does {dogName} weigh?" newline="True"/>
+            <input variable="dogWeight"/>
+            <assign variable="dogWeight" expression="Convert.ToInt32(Console.ReadLine())"/>
+            <if expression="if (dogWeight &lt; 15)">
+                <then>
+                    <assign variable="totalCost" expression="55 * careDuration"/>
+                    <output expression="The total cost for us to take care of {dogName} for {careDuration} weeks will be ${totalCost}" newline="True"/>
+                    <if expression="if (totalCost &gt; 125)">
+                        <then>
+                            <output expression="Congratulations! Because your total bill exceeds $125, you qualify for a 2% discount!" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <if expression="if (dogWeight &lt; 31)">
+                        <then>
+                            <assign variable="totalCost" expression="75 * careDuration"/>
+                            <output expression="The total cost for us to take care of {dogName} for {careDuration} weeks will be ${totalCost}" newline="True"/>
+                            <if expression="if (totalCost &gt; 125)">
+                                <then>
+                                    <output expression="Congratulations! Because your total bill exceeds $125, you qualify for a 2% discount!" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="if (dogWeight &lt; 80)">
+                                <then>
+                                    <assign variable="totalCost" expression="105 * careDuration"/>
+                                    <output expression="The total cost for us to take care of {dogName} for {careDuration} weeks will be ${totalCost}" newline="True"/>
+                                    <if expression="if (totalCost &gt; 125)">
+                                        <then>
+                                            <output expression="Congratulations! Because your total bill exceeds $125, you qualify for a 2% discount!" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </then>
+                                <else>
+                                    <assign variable="totalCost" expression="125 * careDuration"/>
+                                    <output expression="The total cost for us to take care of {dogName} for {careDuration} weeks will be ${totalCost}" newline="True"/>
+                                    <if expression="if (totalCost &gt; 125)">
+                                        <then>
+                                            <output expression="Congratulations! Because your total bill exceeds $125, you qualify for a 2% discount!" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

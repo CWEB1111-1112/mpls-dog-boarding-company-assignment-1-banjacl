@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\banjacl\\Desktop\\assignment 1\\assignment 1.csproj": {}
+    "C:\\Users\\banjacl\\Desktop\\Programming Funds 2\\assignment_1\\assignment 1\\assignment 1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\banjacl\\Desktop\\assignment 1\\assignment 1.csproj": {
+    "C:\\Users\\banjacl\\Desktop\\Programming Funds 2\\assignment_1\\assignment 1\\assignment 1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\banjacl\\Desktop\\assignment 1\\assignment 1.csproj",
+        "projectUniqueName": "C:\\Users\\banjacl\\Desktop\\Programming Funds 2\\assignment_1\\assignment 1\\assignment 1.csproj",
         "projectName": "assignment 1",
-        "projectPath": "C:\\Users\\banjacl\\Desktop\\assignment 1\\assignment 1.csproj",
+        "projectPath": "C:\\Users\\banjacl\\Desktop\\Programming Funds 2\\assignment_1\\assignment 1\\assignment 1.csproj",
         "packagesPath": "C:\\Users\\banjacl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\banjacl\\Desktop\\assignment 1\\obj\\",
+        "outputPath": "C:\\Users\\banjacl\\Desktop\\Programming Funds 2\\assignment_1\\assignment 1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\banjacl\\AppData\\Roaming\\NuGet\\NuGet.Config",
